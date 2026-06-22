@@ -11,6 +11,7 @@ public class DepartamentoRepository : IDepartamentoRepository
     {
         _context = context;
     }
+
     public async Task AddAsync(Departamento departamento)
     {
         await _context.Departamentos.AddAsync(departamento);

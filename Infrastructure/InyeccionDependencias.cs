@@ -14,9 +14,8 @@ public static class InyecciónDependencias
         IConfiguration configuration = services
             .BuildServiceProvider()
             .GetRequiredService<IConfiguration>();
-        var connectionString = configuration
-            .GetConnectionString("abnbdb");
+        var connectionString = configuration.GetConnectionString("abnbdb");
         services.AddDbContext<ApplicationContext>(options => options.UseNpgsql(connectionString));
-        services.AddScoped<IDepartamentoRepository , DepartamentoRepository>();
+        services.AddScoped<IDepartamentoRepository, DepartamentoRepository>();
     }
 }

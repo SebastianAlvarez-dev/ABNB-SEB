@@ -1,6 +1,6 @@
 var builder = DistributedApplication.CreateBuilder(args);
 var dbServer = builder.AddPostgres("dbserver").WithLifetime(ContainerLifetime.Persistent);
-dbServer.WithPgAdmin(options => 
+dbServer.WithPgAdmin(options =>
     options.WithHostPort(5555).WithLifetime(ContainerLifetime.Persistent)
 );
 var db = dbServer.AddDatabase("abnbdb");
