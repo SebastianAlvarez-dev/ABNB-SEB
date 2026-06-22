@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/Abnb.ServiceDefaults/" />
+  <Project Path="ABNB.AppHost/ABNB.AppHost.csproj" />
+  <Project Path="ABNB.ServiceDefaults/ABNB.ServiceDefaults.csproj" />
   <Project Path="Api/Api.csproj" />
   <Project Path="Application/Application.csproj" />
   <Project Path="Domain/Domain.csproj" />
